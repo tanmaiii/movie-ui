@@ -1,0 +1,66 @@
+@use '../../scss/' as *;
+
+
+
+
+
+.castList__container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    &__header{
+        @include flex(center, space-between);
+        padding: 1.6rem 0;
+        h4{
+            font-size: 1.2rem;
+        }
+
+        &__control{
+            @include flex(center, unset);
+            .progress-bar{
+                display: flex;
+                gap: 0.25rem;
+                margin-right: 20px;
+
+                .progress-item{
+                    background-color: $color-grey3;
+                    min-width: 1.5rem;
+                    height: .5rem;
+                    transition: all .3s;
+                    &.active{
+                        background-color: $color-grey4;
+                    }
+                }
+            }
+
+            button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid $color-grey4;
+                background-color: transparent;
+                color: $color-grey4;
+                margin-left: 10px;
+                cursor: pointer;
+                transition: all .3s;
+                &:hover{
+                    background-color:  $color-grey4;
+                    color: $color-grey1;
+                }
+            }
+
+        }
+    }
+
+    &__slider{
+        display: flex;
+        height: 300px;
+        width: 100%;
+        transition: all .3s;
+        @include mobile(){
+            height: 240px;
+        }
+    }
+
+}

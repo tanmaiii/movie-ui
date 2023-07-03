@@ -1,0 +1,39 @@
+@use '../../scss/' as *;
+
+.btn{
+    padding: 16px 26px;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    color: $color-bg-white;
+    cursor: pointer;
+    &.big{
+        width: 100%;
+    }
+}
+
+.btn-main{
+    background-image: $gradient;
+    color: $color-bg-white;
+    transition: all .3s;
+    &:hover{
+        -webkit-box-shadow: -5px 4px 35px -5px $color-primary1; 
+        box-shadow: -5px 4px 35px -5px $color-primary1;
+    }
+}
+
+.btn-outline{
+    background-color: rgba(85, 88, 91, 0.8);
+    padding: 16px 22px;
+    opacity: 0.6;
+    transition: all .3S;
+    &.round{
+        border-radius: 50%;
+    }
+    i{
+        line-height:0;
+    }
+    &:hover{
+        opacity: 1;
+        box-shadow: -5px 4px 16px -5px #000000;
+    }
+}

@@ -1,0 +1,69 @@
+@use '../../scss/' as *;
+
+.searchHeader{
+    @include flex(center, space-between);
+    .left{
+        @include flex(center, unset);
+        .searchHeader__button{
+            a{
+                margin-right: 20px;
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .searchHeader__input{
+            border-radius: 26px;
+            border: 2px solid $color-grey3;
+            padding: 16px 0 16px 20px;
+            margin-left: 20px;
+            input{
+                font-size: 1.2rem;
+                background-color: transparent;
+                outline: none;
+                color: $color-grey4;
+                width: 300px;
+            }
+            i{
+                font-size: 1.2rem;
+                margin-right: 10px;
+            }
+        }
+    }
+    .right{
+        @include flex(center, unset);
+        .searchHeader__bell{
+            margin-right: 20px;
+            position: relative;
+            i{
+                font-size: 1.4rem;
+            }
+            span{
+                position: absolute;
+                top: -4px;
+                right: -4px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $color-primary1;
+                border: 2px solid $color-grey1;
+            }
+        }
+        .searchHeader__user{
+            @include flex(center, unset);
+            cursor: pointer;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 2px solid $color-primary1;
+                box-shadow: 0 1px 0 red;
+                object-fit: cover;
+            }
+            h4{
+                    margin-left: 10px;
+            }
+        }
+    }
+}

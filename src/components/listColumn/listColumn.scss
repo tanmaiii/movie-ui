@@ -1,0 +1,9 @@
+@use '../../scss/' as *;
+
+.ListColumn{
+    padding: 20px 40px;
+    h4{
+        font-size: 1.4rem;
+        margin: 0 0 1rem 0;
+    }
+}
