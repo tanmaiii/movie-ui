@@ -1,13 +1,1 @@
-```
-
-git clone git@github.com:tanmaiii/react-mini.git
-
-```
-
-cd react-mini
-
-```
-
-npm i
-
-```
+![Alt text](src/assets/f141c17fd40dff2486f680702fe566d2.png)
