@@ -1,1 +1,1 @@
-![Alt text](src/assets/homegae.png)
+![Alt text](src/assets/homegae.jpg)
